@@ -162,4 +162,75 @@ body {
   padding-bottom: 50px;
   color: rgba(0, 106, 255, 1);
   font-size: 0.6em;
+ }
+
+/* Regole sezione Deploy */
+
+.contenitoredeploy {
+  width: 70%;
+  margin: auto;
+  height: auto;
+}
+
+.testideploy {
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+.testideploy  h2 {
+  color: #031c4e;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.testideploy h3 {
+  color: #5c6a88;
+  font-size: 0.7em;
+}
+
+section.sezdeploy p {
+  color: grey;
+  font-size: 0.7em;
+}
+
+.deploymargin {
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+
+.deploylist {
+  border-left: 1px solid #cccccc;
+}
+
+div.deploylist ul {
+  list-style: none;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+div.deploylist ul li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 0.7em;
+  color: #5c6a88;
+}
+
+section.sezdeploy img {
+  margin-top: 20px;
+  display: block;
+}
+
+section.sezdeploy h3,
+section.sezdeploy p {
+  text-align: left;
+}
+
+section.sezdeploy h3 {
+  color: #031c4e;
+  font-weight: bold;
+}
+
+section.sezdeploy p {
+  color: #5c6a88;
 }
