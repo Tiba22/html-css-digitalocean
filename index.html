@@ -4,8 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Ocean</title>
+    <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+    <!-- Mio css -->
     <link rel="stylesheet" href="css/style.css">
 
   </head>
@@ -13,27 +20,67 @@
 
     <div class="contenitoreallnomargin">
 
-      <!-- Parte Header -->
-      <!-- <header class="navbar-fixed-top">
-        <div class="contenitore">
-          <div class="row"> -->
-      <header>    
-            <!-- Header SX -->
-            <div class="col-xs-3">
-
-            </div>
-
-            <!-- Header Centrale -->
-            <div class="col-xs-5">
-
-            </div>
-
-            <!-- Header DX -->
-             <div class="col-xs-4">
-
-            </div>
+      <!-- Sezione Header -->
+      <header class="sezheader navbar navbar-default navbar-fixed-top" >
+        <div class="contenitoreheader">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img id="logo" src="img/logo.png" alt="Brand">
+            </a>
           </div>
-        </div><!-- Fine Contenitore header -->
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Customers <span class="sr-only">(current)</span></a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Docs</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Login</a></li>
+              <li><button type="button" name="button">Sign up</button></li>
+            </ul>
+          </div>
+        </div>
       </header>
 
       <!-- Sezione Jumbotron -->
@@ -54,7 +101,7 @@
                 <input type="password" class="form-control" placeholder="Password">
                 <a class="btn btn-default createaccountbtn" href="#" role="button">Create your account</a>
                 <a class="btn btn-default signgooglebtn" href="#" role="button">Sign up with Google</a>
-                <p>By signing up you agree to the <a href="#">Terms of Service.</a></p>
+                <h6>By signing up you agree to the <a href="#">Terms of Service.</a></h6>
               </div>
             </div>
           </div>
@@ -65,7 +112,7 @@
       <section class="loghims">
         <div class="contenitoresezloghi">
           <div class="row">
-            <div class="col-xs-10 col-xs-offset-1">
+            <div class="col-xs-12">
               <h2>INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</h2>
             </div>
           </div>
@@ -92,7 +139,7 @@
             </div>
           </div> <!-- Fine div contloghi -->
           <div class="customerstories">
-            <a href="#">View customer stories ></a>
+            <h6><a href="#">View customer stories ></a></h6>
           </div>
         </div>
       </section>  <!-- Fine sezione loghi -->
@@ -162,7 +209,7 @@
           <div class="row">
             <div class="col-xs-12">
               <h2>Designed for developers</h2>
-              <h3>Build more and spend less time managing your infrastructure with our    east-to.use control panel and API.</h3>
+              <h3>Build more and spend less time managing your infrastructure with our easy-to use control panel and API.</h3>
               <i class="fas fa-chevron-left"></i>
               <img src="img/screenshot-create-droplet-12336b41.jpg" alt="">
               <i class="fas fa-chevron-right"></i>
@@ -213,7 +260,7 @@
 
       <!-- Sezione Service your Customers -->
       <section class="sezservice">
-        <div class="containerservice">
+        <div class="contenitoreservice">
 
           <div class="row">
 
