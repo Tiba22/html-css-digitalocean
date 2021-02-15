@@ -1,8 +1,16 @@
 /* debug */
 [class*="col-"]{
   min-height: 70px;
-  border: solid 1px #000;
 }
+
+
+/* Regole Generali */
+.contenitoreallnomargin {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 body {
   overflow-x: hidden;
@@ -28,13 +36,6 @@ html {
   html {
     font-size: 1.6rem;
   }
-}
-
-/* Regole Generali */
-.contenitoreallnomargin {
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .contenitore {
@@ -90,10 +91,6 @@ header,.sezheader,.navbar,.navbar-default {
 .navbar-default .navbar-toggle {
   border: none;
   margin-top: 20px;
-}
-
-#bs-example-navbar-collapse-1 > ul:nth-child(1) {
-  padding-left: 4%;
 }
 
 @media (max-width: 1405px) {
@@ -355,6 +352,12 @@ section.sezdeploy p {
 .contenitoredev img {
   padding-top: 50px;
   width: 80%;
+}
+
+.contenitoredev .fa-chevron-left,
+.contenitoredev .fa-chevron-right {
+  margin: 0 10px;
+  text-align: center;
 }
 
 .sottodev h4 {
