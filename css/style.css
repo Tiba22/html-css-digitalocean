@@ -72,6 +72,13 @@ header,.sezheader,.navbar,.navbar-default {
   width: 200px;
 }
 
+@media (max-width: 400px) {
+  #logo {
+    width: 120px;
+    padding-top: 10px;
+  }
+}
+
 .contenitoreheader li {
   font-size: 16px;
   margin-top: 10px;
@@ -93,9 +100,20 @@ header,.sezheader,.navbar,.navbar-default {
   margin-top: 20px;
 }
 
+.navbar-collapse.in {
+  background: lightgrey;
+  max-height: auto;
+}
+
 @media (max-width: 1405px) {
   .navbar-header {
     float: none;
+  }
+
+  .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 450px;
+    border: 1px solid black;
+    border-top: none;
   }
   .navbar-left,.navbar-right {
     float: none !important;
@@ -127,6 +145,11 @@ header,.sezheader,.navbar,.navbar-default {
   }
   .collapse.in{
     display:block !important;
+  }
+
+  .contenitoreheader button {
+    margin-left: 10px;
+    padding-bottom: 5px;
   }
 }
 
