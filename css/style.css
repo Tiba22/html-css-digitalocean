@@ -100,14 +100,16 @@ header,.sezheader,.navbar,.navbar-default {
   margin-top: 20px;
 }
 
-.navbar-collapse.in {
-  background: lightgrey;
-  max-height: auto;
-}
+
 
 @media (max-width: 1405px) {
   .navbar-header {
     float: none;
+  }
+
+  .navbar-collapse.in {
+    background: #F0F0F0;
+    max-height: auto;
   }
 
   .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
